@@ -121,6 +121,7 @@ int main(int argc,char*argv[]) {
     delete[] B;
 */
 
+  delete[] array;
     return 0;
 }
 
