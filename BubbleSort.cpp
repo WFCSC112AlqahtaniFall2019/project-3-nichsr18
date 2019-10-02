@@ -30,7 +30,7 @@ int main(int argc,char*argv[]) {
 
 
     cout<<seed<<" "<<length<<endl;
-    
+
 
     vector<int> v(length); // vector to be sorted
     vector<int> t(length); // temporary workspace
