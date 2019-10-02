@@ -13,23 +13,24 @@ void swap (int *a, int *b);
 void bubbleSort(int *a, int n);
 
 int main(int argc,char*argv[]) {
-  /*//Check if correct number of arguments is provided
+  //Check if correct number of arguments is provided
     if(argc!=3){
         cout<<"Usage: BubbleSort seed length"<<endl;
-        return 1;
-    }*/
+        exit(1);
+    }
 
     // get input: first is random seed, second is vector length
     int seed, length;
-    //seed=atoi(argv[1]);
-    //length=atoi(argv[2]);
+    seed=atoi(argv[1]);
+    length=atoi(argv[2]);
 
-    seed=4;
-    length=5;
+    //seed=4;
+    //length=5;
     srand(seed);
 
 
     cout<<seed<<" "<<length<<endl;
+    
 
     vector<int> v(length); // vector to be sorted
     vector<int> t(length); // temporary workspace
